@@ -1,0 +1,188 @@
+@media only screen and (max-width: 740px) {
+  /* header start here*/
+
+  .header {
+    .header-bg {
+      top: -12%;
+      right: -20%;
+    }
+    .innerHeader {
+      .navFlex {
+        position: relative;
+
+        .navMenuContainer {
+          .background {
+            background: linear-gradient(
+              157deg,
+              rgba(0, 0, 0, 0.3) 50%,
+              rgba(0, 0, 0, 0.7)
+            );
+            height: 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transition: all 0.5s ease-in-out;
+          }
+
+          .background.newBackground {
+            position: fixed;
+            background: linear-gradient(
+              157deg,
+              rgba(0, 0, 0, 0.3) 50%,
+              rgba(0, 0, 0, 0.7)
+            );
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+          }
+          .navMenu {
+            width: 80%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -220%);
+            transition: all 0.5s ease-in-out;
+            a {
+              display: block;
+              text-align: center;
+              padding: 20px 0;
+            }
+          }
+          .navMenu.newNavMenu {
+            background: white;
+            transform: translate(-50%, -45%);
+            z-index: 100;
+          }
+        }
+        .close {
+          position: fixed;
+          right: 10%;
+          z-index: 100;
+        }
+      }
+    }
+  }
+
+  /* body start here*/
+
+  .bodyMain {
+    // Top start here
+    .absolute {
+      display: none;
+    }
+
+    .flex {
+      width: 100%;
+      .bodyTextOne {
+        width: 80%;
+      }
+
+      .bodyTextTwo {
+        width: 80%;
+        .textContainer {
+          h6 {
+            font-size: 16px;
+            padding-right: 10px;
+            .span {
+              padding: 5px 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    // Overviews start here
+
+    .overviews {
+      .overviewsCard {
+        display: flex;
+        justify-content: space-evenly;
+        width: 400%;
+
+        animation: animateName 30s linear infinite alternate;
+
+        @keyframes animateName {
+          0% {
+            margin-left: 0;
+          }
+          25% {
+            margin-left: 0;
+          }
+          26% {
+            margin-left: -100%;
+          }
+          50% {
+            margin-left: -100%;
+          }
+          51% {
+            margin-left: -200%;
+          }
+          75% {
+            margin-left: -200%;
+          }
+          76% {
+            margin-left: -300%;
+          }
+          100% {
+            margin-left: -300%;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer start here
+
+  .footer {
+    .topContainer {
+      background: $brightRed;
+      .top {
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+          width: 100%;
+          padding-bottom: 50px;
+        }
+      }
+    }
+    .footerContainer {
+      flex-direction: column;
+      .icons {
+        position: static;
+        width: 100%;
+        .socialIcon {
+          bottom: 150px;
+        }
+      }
+      .links {
+        width: 100%;
+        margin: 50px 0;
+      }
+
+      form {
+        width: 100%;
+        padding-bottom: 200px;
+        input {
+          margin-right: 20px;
+        }
+        button {
+          padding: 12px 40px;
+        }
+      }
+      .copyRight {
+        
+        left: 50%;
+        bottom: 8%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.bodyMain {
+  position: relative;
+  .absolute {
+    width: 50%;
+    position: absolute;
+    z-index: -10;
+    bottom: 10%;
+    left: -20%;
+  }
+
+  // Top start here
+
+  .flex {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+    .bodyTextOne {
+      width: 50%;
+
+      h2 {
+        padding-right: 20px;
+      }
+      p {
+        padding: 20px 150px 20px 0;
+      }
+    }
+
+    .bodyTextTwo {
+      width: 50%;
+
+      .textContainer {
+        margin-bottom: 20px;
+
+        h6 {
+          .span {
+            background: $brightRed;
+            color: #fff;
+            padding: 5px 30px;
+            border-radius: 100px;
+            margin-right: 10px;
+          }
+        }
+
+        p {
+          padding: 20px 10px 10px 0;
+        }
+      }
+    }
+  }
+
+  // Overviews start here
+
+  .overviews {
+    margin: 50px 0;
+    text-align: center;
+    overflow: hidden;
+
+    .overviewsCard {
+      display: flex;
+      justify-content: space-evenly;
+      width: 200%;
+      animation: animateName 60s linear infinite alternate;
+
+      @keyframes animateName {
+        0% {
+          margin-left: 0px;
+        }
+        100% {
+          margin-left: -100%;
+        }
+      }
+
+      .card {
+        margin: 20px;
+        width: 20%;
+        margin: 130px auto;
+        background: $veryLightGray;
+        position: relative;
+        img {
+          width: 100px;
+          position: absolute;
+          top: 0%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        h6 {
+          padding-top: 80px;
+        }
+        p {
+          padding: 15px 20px 50px;
+        }
+      }
+    }
+  }
+  .button {
+    margin-bottom: 50px;
+    button {
+      @include button($brightRed, #fff, true);
+      outline: none;
+    }
+  }
+}

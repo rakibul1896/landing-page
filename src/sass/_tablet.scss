@@ -1,0 +1,87 @@
+@media only screen and (max-width: 1100px) {
+  /* header start here*/
+  .header {
+    .innerHeader {
+      .navFlex {
+        .btn-primary {
+          display: none;
+        }
+      }
+      .headerFlex {
+        flex-direction: column-reverse;
+
+        .text {
+          width: 100%;
+          text-align: center;
+          padding-right: 0;
+          p {
+            margin: 30px auto;
+          }
+
+          .headerBtn {
+            margin: 30px 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* body start here*/
+
+  .bodyMain {
+    .flex {
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+      .bodyTextOne {
+        width: 80%;
+        margin: auto;
+        h2 {
+          padding-right: 0px;
+        }
+        p {
+          padding: 20px;
+        }
+      }
+
+      .bodyTextTwo {
+        width: 80%;
+        margin: 50px auto;
+
+        .textContainer {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          h6 {
+            font-size: 18px;
+            background: $lightRed;
+            padding: 5px 20px 5px 0;
+            border-radius: 100px 0px 0px 100px;
+          }
+        }
+      }
+    }
+  }
+  /* footer start here*/
+  .footer {
+    .footerContainer {
+      .icons {
+        width: 30.33%;
+      }
+
+      form {
+        width: 36.33%;
+        button {
+          padding: 12px 30px;
+        }
+      }
+      .copyRight {
+        text-align: center;
+        left: 68%;
+        bottom: 24%;
+      }
+    }
+  }
+}

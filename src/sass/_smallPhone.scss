@@ -1,0 +1,26 @@
+@media only screen and (max-width: 425px) {
+  .header {
+    .header-bg {
+      top: -2%;
+      right: -18%;
+      width: 100%;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  /* body start here*/
+  .bodyMain {
+    .flex {
+      width: 100%;
+      .bodyTextOne {
+        width: 90%;
+      }
+
+      .bodyTextTwo {
+        width: 95%;
+      }
+    }
+  }
+}

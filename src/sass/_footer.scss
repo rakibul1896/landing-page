@@ -1,0 +1,90 @@
+.footer {
+  .topContainer {
+    background: $brightRed;
+    position: relative;
+    overflow: hidden;
+
+    .one {
+      position: absolute;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      padding: 100px 0;
+      h2 {
+        width: 430px;
+        color: white;
+        padding-right: 20px;
+      }
+      button {
+        @include button(white, $brightRed, false);
+      }
+    }
+  }
+
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    background: $veryDarkBlue;
+    position: relative;
+    padding: 50px 0;
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      width: 33.33%;
+      position: relative;
+      .socialIcon {
+        position: absolute;
+        bottom: 0;
+        svg {
+          color: white;
+          margin-right: 10px;
+        }
+        svg:hover {
+          color: $brightRed;
+        }
+      }
+    }
+    .links {
+      width: 33.33%;
+      display: flex;
+      justify-content: space-around;
+      .one,
+      .two {
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          padding-bottom: 15px;
+        }
+      }
+    }
+    form {
+      width: 33.33%;
+      display: flex;
+      justify-content: center;
+       input {
+         border-radius: 100px;
+         height: 40px;
+         border: none;
+         outline: none;
+         margin-right: 10px;
+         padding-left: 20px;
+       }
+       button {
+         @include button($brightRed, #fff, false)
+       }
+    }
+    .copyRight {
+      position: absolute;
+      left: 73%;
+      bottom: 23%;
+    }
+  }
+}
